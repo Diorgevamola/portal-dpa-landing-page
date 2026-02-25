@@ -1,6 +1,6 @@
 {
   "name": "portal-dpa-landing-page",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Portal DPA - Landing page for self-defense course aggregator. GitHub + Vercel integration test.",
   "main": "server.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "dev": "node server.js"
   },
   "dependencies": {
+    "dotenv": "^17.3.1",
     "express": "^4.21.0"
   }
 }
