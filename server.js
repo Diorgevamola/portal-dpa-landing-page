@@ -1,13 +1,21 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 6000;
 
 // =============================================
-// MIME Type Configuration
+// MIME Type Configuration & Static Files
 // =============================================
-app.use(express.static(path.join(__dirname), {
+const publicDir = path.join(__dirname, 'public');
+const rootDir = __dirname;
+
+// Serve from public/ if it exists, otherwise serve from root
+// This handles both Vercel deployment and local development
+const staticDir = fs.existsSync(publicDir) ? publicDir : rootDir;
+
+app.use(express.static(staticDir, {
   setHeaders: (res, filepath) => {
     // Set correct MIME types
     if (filepath.endsWith('.css')) {
@@ -35,6 +43,13 @@ app.use(express.static(path.join(__dirname), {
     // Security headers
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('X-Frame-Options', 'DENY');
+
+    // Cache headers for static assets
+    if (filepath.endsWith('.css') || filepath.endsWith('.js') ||
+        filepath.endsWith('.png') || filepath.endsWith('.jpg') ||
+        filepath.endsWith('.woff2') || filepath.endsWith('.woff')) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    }
   }
 }));
 
@@ -43,7 +58,10 @@ app.use(express.static(path.join(__dirname), {
 // =============================================
 app.get('/', (req, res) => {
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  res.sendFile(path.join(__dirname, 'index.html'));
+  const indexPath = fs.existsSync(path.join(publicDir, 'index.html'))
+    ? path.join(publicDir, 'index.html')
+    : path.join(rootDir, 'index.html');
+  res.sendFile(indexPath);
 });
 
 // Catch-all 404
