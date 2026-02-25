@@ -1247,18 +1247,18 @@ strong {
    ============================================================ */
 .urgency {
   background: var(--color-primary);
-  color: #fff;
+  color: #1a1200;
   padding: var(--spacing-3xl) 0;
   text-align: center;
 }
 
 .urgency h2 {
-  color: #fff;
+  color: #1a1200;
   margin-bottom: var(--spacing-lg);
 }
 
 .urgency p {
-  opacity: 0.9;
+  color: #1a1200;
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
@@ -1273,7 +1273,8 @@ strong {
 }
 
 .countdown__unit {
-  background: rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.15);
   border-radius: var(--radius-md);
   padding: var(--spacing-sm) var(--spacing-md);
   min-width: 64px;
@@ -1283,20 +1284,21 @@ strong {
   font-size: 28px;
   font-weight: 800;
   line-height: 1.2;
-  color: var(--color-accent);
+  color: #B91C1C;
 }
 
 .countdown__label {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  opacity: 0.7;
+  color: #1a1200;
+  opacity: 0.75;
 }
 
 /* Bonus */
 .bonus-card {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(212,175,55,0.3);
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.18);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
   margin: var(--spacing-lg) auto;
@@ -1306,8 +1308,8 @@ strong {
 
 .bonus-card__badge {
   display: inline-block;
-  background: var(--color-accent);
-  color: var(--color-primary);
+  background: #B91C1C;
+  color: #FFD700;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1317,19 +1319,22 @@ strong {
 }
 
 .bonus-card h3 {
-  color: #fff;
+  color: #1a1200;
   font-size: 17px;
   margin-bottom: var(--spacing-xs);
 }
 
 .bonus-card__value {
   font-size: 14px;
+  color: #1a1200;
   opacity: 0.8;
 }
 
 .urgency__savings {
   font-size: 15px;
-  background: rgba(231,76,60,0.2);
+  background: rgba(185,28,28,0.15);
+  border: 1px solid rgba(185,28,28,0.3);
+  color: #7F1D1D;
   display: inline-block;
   padding: var(--spacing-xs) var(--spacing-md);
   border-radius: var(--radius-full);
