@@ -363,6 +363,24 @@ strong {
 }
 
 /* Video Placeholder */
+
+/* VSL Hero label e prova social */
+.vsl-label {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-warning, #f59e0b);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.vsl-proof {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-gray-500, #9ca3af);
+  margin-top: 0.75rem;
+  font-style: italic;
+}
 .video-placeholder {
   position: relative;
   width: 100%;

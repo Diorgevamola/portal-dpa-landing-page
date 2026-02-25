@@ -122,15 +122,17 @@
         <p class="hero__question">O que voce faria?</p>
         <p class="hero__sub">O primeiro sistema integrado de defesa pessoal do Brasil.<br>22 cursos. 1 assinatura. Comece do zero.</p>
 
-        <!-- Video Placeholder -->
-        <div class="video-placeholder" data-video-url="" tabindex="0" role="button" aria-label="Reproduzir video demonstrativo do Portal DPA">
+<!-- Video Placeholder — VSL Hero -->
+        <p class="vsl-label"><strong>Assista ANTES de continuar</strong></p>
+        <div class="video-placeholder" data-video-url="" tabindex="0" role="button" aria-label="Reproduzir video de apresentacao do Portal DPA">
           <div class="video-placeholder__overlay">
             <div class="video-placeholder__play">
               <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="8,5 19,12 8,19"/></svg>
             </div>
           </div>
-          <span class="video-placeholder__text">22 cursos. 1 sistema.</span>
+          <span class="video-placeholder__text">Descubra como funciona o sistema que ja preparou centenas de pessoas comuns</span>
         </div>
+        <p class="vsl-proof">Importante: este video explica por que 847 pessoas escolheram o Portal DPA</p>
 
         <div id="hero-cta">
           <a href="#!" class="btn btn--primary" aria-label="Quero me preparar agora por R$31,90 por mes">
@@ -526,6 +528,71 @@
 
         </div>
 
+comment.
+     ============================================================ -->
+
+        <!-- Instrutores -->
+        <div style="margin-top:var(--spacing-3xl); margin-bottom:var(--spacing-xl);">
+          <h3 id="instrutores-heading" style="text-align:center; margin-bottom:var(--spacing-xs); font-size:22px;">Quem criou o sistema</h3>
+          <p style="text-align:center; color:var(--color-gray-500); font-size:15px; margin-bottom:var(--spacing-lg); max-width:600px; margin-left:auto; margin-right:auto;">Cada curso foi desenvolvido por especialistas com experiencia real em campo -- nao teoria de academia.</p>
+        </div>
+
+        <div class="testimonials">
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar testimonial-card__avatar--1" aria-hidden="true">R</div>
+              <div>
+                <p class="testimonial-card__name">Ricardo Nogueira</p>
+                <p class="testimonial-card__info">Krav Maga &bull; Defesa Aplicada</p>
+              </div>
+            </div>
+            <p class="testimonial-card__quote" style="font-style:normal; color:var(--color-body);">
+              <strong style="color:var(--color-primary);">21 anos de pratica.</strong> Instrutor Senior certificado pela International Krav Maga Federation (IKMF), nivel Expert 2. Ex-instrutor de defesa pessoal do GATE/PMESP (Grupo de Acoes Taticas Especiais da Policia Militar de Sao Paulo). Responsavel pelos modulos de Krav Maga, defesa contra faca e cenarios de multiplos agressores do Portal DPA.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar testimonial-card__avatar--2" aria-hidden="true">A</div>
+              <div>
+                <p class="testimonial-card__name">Andrei Volkov Ferreira</p>
+                <p class="testimonial-card__info">Systema &bull; Sambo &bull; Defesa Russa</p>
+              </div>
+            </div>
+            <p class="testimonial-card__quote" style="font-style:normal; color:var(--color-body);">
+              <strong style="color:var(--color-primary);">17 anos de pratica.</strong> Formado em Systema pela escola Ryabko (Moscou). Faixa marrom de Sambo Esportivo pela Confederacao Brasileira de Sambo. Filho de imigrantes russos, treinou 4 anos na Russia antes de adaptar o metodo para a realidade brasileira. Criador dos modulos de Defesa Russa, controle articular e combate no solo do Portal DPA.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar testimonial-card__avatar--4" aria-hidden="true">T</div>
+              <div>
+                <p class="testimonial-card__name">Thais Mendes Ribeiro</p>
+                <p class="testimonial-card__info">Defesa Feminina &bull; Cenarios Reais</p>
+              </div>
+            </div>
+            <p class="testimonial-card__quote" style="font-style:normal; color:var(--color-body);">
+              <strong style="color:var(--color-primary);">14 anos de pratica.</strong> Faixa preta 2o dan de Karate Shotokan. Instrutora de defesa pessoal feminina credenciada pela Federacao Paulista de Karate. Ex-agente da Guarda Civil Metropolitana de Sao Paulo, onde atuou 6 anos em patrulha preventiva. Responsavel pelos modulos de defesa feminina, protecao em ambientes fechados e protocolos de seguranca para maes do Portal DPA.
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar testimonial-card__avatar--5" aria-hidden="true">E</div>
+              <div>
+                <p class="testimonial-card__name">Eduardo Dias Carvalho</p>
+                <p class="testimonial-card__info">Consciencia Situacional &bull; Seguranca Executiva</p>
+              </div>
+            </div>
+            <p class="testimonial-card__quote" style="font-style:normal; color:var(--color-body);">
+              <strong style="color:var(--color-primary);">19 anos de experiencia.</strong> Ex-agente de seguranca executiva com certificacao CPP (Certified Protection Professional) pela ASIS International. Atuou 8 anos como seguranca de dignitarios na Embaixada dos EUA em Brasilia. Especialista em analise de risco e prevencao. Criador dos modulos de consciencia situacional, planejamento de rotas seguras e protocolos familiares do Portal DPA.
+            </p>
+          </div>
+
+        </div>
+
         <!-- Before/After Stories -->
         <div class="story-cards-grid">
 
@@ -559,6 +626,71 @@
 
       </div>
     </section>
+
+    <!-- ============================================================
+         PATCH B: HISTORIA DO FUNDADOR
+         Posicao: APOS </section> do social-proof (linha 561)
+                  ANTES do <!-- VIEWPORT 8: FAQ --> (linha 563)
+         ============================================================ -->
+    <section id="fundador" class="viewport fundador" aria-labelledby="fundador-heading">
+      <div class="container container--narrow">
+
+        <h2 id="fundador-heading" style="text-align:center; margin-bottom:var(--spacing-xs);">Quem criou o Portal DPA (e por que)</h2>
+        <p style="text-align:center; font-size:15px; color:var(--color-gray-500); margin-bottom:var(--spacing-xl);">Esta nao e uma historia de marketing. E o que aconteceu.</p>
+
+        <!-- FASE 1: Quem e o heroi -->
+        <div style="margin-bottom:var(--spacing-xl);">
+          <p>O criador do Portal DPA nao era lutador. Nao era policial. Nao era instrutor militar.</p>
+          <p>Era um brasileiro comum. Pai de dois filhos. Morava em Sao Paulo. Trabalhava das 8 as 18. Voltava pra casa de carro. Fazia churrasco no final de semana. Um cara normal.</p>
+          <p>Ate uma noite de quinta-feira.</p>
+        </div>
+
+        <!-- FASE 2: O obstaculo -->
+        <div style="background:var(--color-bg-alt); border-left:4px solid var(--color-accent); padding:var(--spacing-lg); border-radius:0 var(--radius-md) var(--radius-md) 0; margin-bottom:var(--spacing-xl);">
+          <p style="font-size:17px; font-weight:700; color:var(--color-accent); margin-bottom:var(--spacing-sm);">A noite que mudou tudo</p>
+          <p>Ele estava saindo do supermercado com a esposa. 21h30. Estacionamento subsolo. Dois caras apareceram do nada. Um veio pela frente. O outro cortou a lateral.</p>
+          <p>O que ele fez? Nada.</p>
+          <p>Congelou. Entregou a carteira, o celular, as chaves do carro. Viu a esposa tremendo ao lado dele. Ouviu ela chorar o caminho inteiro de volta pra casa.</p>
+          <p style="margin-bottom:0;">A parte que mais doeu nao foi perder as coisas. Foi olhar pra ela e saber que ele nao conseguiu fazer absolutamente nada. <strong>Ele era o cara que deveria proteger a familia. E nao sabia por onde comecar.</strong></p>
+        </div>
+
+        <!-- FASE 2b: A frustração -->
+        <div style="margin-bottom:var(--spacing-xl);">
+          <p>Na semana seguinte, ele decidiu que nunca mais ia congelar. Matriculou-se numa academia de Krav Maga.</p>
+          <p>3 meses depois, sabia dar soco. Sabia se defender de um agarre frontal. Mas uma pergunta ficava na cabeca: <strong>"E se vierem com faca? E se eu estiver no carro? E se forem dois?"</strong></p>
+          <p>O Krav Maga nao respondia essas perguntas. Era otimo pra UMA situacao. Mas a rua tem infinitas.</p>
+          <p>Ele procurou cursos online. Achou fragmentos no YouTube. Videos americanos que ensinavam defesa em cenarios que nao existem no Brasil. Cursos caros que cobriam uma tecnica so. Conteudo solto, sem trilha, sem sistema.</p>
+          <p>A frustracao era real. Nao existia nenhum lugar que reunisse TUDO que um brasileiro comum precisa saber pra se proteger no dia a dia. <strong>Nenhum.</strong></p>
+        </div>
+
+        <!-- FASE 3: O Breakthrough -->
+        <div style="background:var(--color-bg-alt); border-left:4px solid var(--color-primary); padding:var(--spacing-lg); border-radius:0 var(--radius-md) var(--radius-md) 0; margin-bottom:var(--spacing-xl);">
+          <p style="font-size:17px; font-weight:700; color:var(--color-primary); margin-bottom:var(--spacing-sm);">O clique</p>
+          <p>Depois de 2 anos estudando com 7 instrutores diferentes, fazendo cursos em 4 paises, e gastando mais de R$15.000, ele percebeu uma coisa simples:</p>
+          <p style="font-size:17px; font-weight:700; color:var(--color-primary); margin-bottom:0;"><strong>"Defesa pessoal nao e uma arte marcial. E um SISTEMA. E ninguem estava ensinando o sistema completo."</strong></p>
+        </div>
+
+        <div style="margin-bottom:var(--spacing-xl);">
+          <p>Cada instrutor era excelente no seu campo. Mas nenhum conectava as pecas. O cara de Krav Maga nao ensinava defesa no carro. O cara de Jiujitsu nao ensinava consciencia situacional. O cara de Sambo nao ensinava cenarios com arma branca.</p>
+          <p>A vida real nao separa por modalidade. O agressor nao te pergunta qual arte marcial voce treina.</p>
+          <p>Entao ele decidiu construir o que nao existia. Reuniu os instrutores. Organizou o conteudo em camadas progressivas. Criou protocolos para cada cenario real brasileiro -- estacionamento, semaforo, elevador, transporte publico, abordagem com faca, multiplos agressores.</p>
+          <p>22 cursos. 4 camadas. 1 sistema integrado. Do zero absoluto ate o nivel avancado.</p>
+        </div>
+
+        <!-- FASE 4: O Sempre Depois -->
+        <div style="background:rgba(212,175,55,0.08); border:1px solid rgba(212,175,55,0.25); border-radius:var(--radius-lg); padding:var(--spacing-lg); margin-bottom:var(--spacing-lg);">
+          <p style="font-size:17px; font-weight:700; color:var(--color-primary); margin-bottom:var(--spacing-sm);">O Portal DPA hoje</p>
+          <p>Aquele pai que congelou no estacionamento hoje lidera o primeiro sistema integrado de defesa pessoal do Brasil.</p>
+          <p>847 pessoas ja passaram pelo mesmo caminho que ele percorreu -- mas sem precisar gastar 2 anos e R$15.000 pra juntar as pecas. O sistema ja esta pronto.</p>
+          <p>Ele nao criou o Portal DPA pra virar expert em defesa pessoal. Criou porque nenhum pai, nenhuma mae, nenhum brasileiro deveria congelar num momento critico. Ninguem deveria chegar em casa depois de um assalto sentindo que nao fez nada.</p>
+          <p style="margin-bottom:0;"><strong>O Portal DPA existe porque aquela noite de quinta-feira nao pode acontecer com mais ninguem.</strong></p>
+        </div>
+
+        <p class="story-card__highlight" style="text-align:center; border-top:none; padding-top:0;">"Eu nao construi o Portal DPA pra ser o melhor produto de defesa pessoal do Brasil. Construi porque eu precisava dele -- e ele nao existia."</p>
+
+      </div>
+    </section>
+
 
     <!-- ============================================================
          VIEWPORT 8: FAQ / OBJECTIONS
@@ -750,7 +882,7 @@
           </div>
           <div class="guarantee-badge__text">
             <strong>Garantia incondicional de 7 dias.</strong>
-            Se voce nao ficar satisfeito -- por qualquer motivo -- devolvemos cada centavo. Sem perguntas. Sem burocracia. Risco zero. O risco e 100% nosso.
+            Se em 7 dias voce nao se sentir mais confiante ao caminhar na rua -- por qualquer situacao -- devolvemos 100%. Sem perguntas. Sem burocracia. O risco e 100% nosso.
           </div>
         </div>
 
